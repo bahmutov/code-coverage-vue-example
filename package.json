@@ -14,7 +14,12 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "7.4.5",
     "@cypress/code-coverage": "1.4.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-istanbul": "5.1.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
     "css-loader": "3.0.0",
     "cypress": "3.3.1",
     "html-webpack-plugin": "3.2.0",

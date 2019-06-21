@@ -11,8 +11,32 @@ module.exports = {
       // load .Vue files
       {
         test: /\.vue$/,
-        use: ['vue-loader']
+        loader: 'vue-loader',
+        options: {
+          // loaders: {
+          //   js: 'babel-loader',
+          //   options: {
+          //     presets: [['env', { modules: 'commonjs' }], 'stage-3']
+          //   }
+          // },
+          // postLoaders: {
+          //   js: 'istanbul-instrumenter-loader',
+          //   options: { esModules: true, compact: false, debug: true }
+          // }
+        }
       },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      },
+      // {
+      //   test: /\.js$/,
+      //   enforce: 'post',
+      //   loader: 'istanbul-instrumenter-loader',
+      //   exclude: /node_modules/,
+      //   options: { esModules: true, compact: false, debug: true }
+      // },
       // this will apply to both plain `.scss` files
       // AND `<style lang="scss">` blocks in `.vue` files
       {
@@ -33,9 +57,13 @@ module.exports = {
       defaultAttribute: 'defer'
     })
   ],
-  resolve: { alias: { vue: 'vue/dist/vue.esm.js' } },
+  resolve: {
+    alias: { vue: 'vue/dist/vue.esm.js' },
+    extensions: ['*', '.js', '.vue', '.json']
+  },
   stats: {
     colors: true
   },
-  devtool: 'source-map'
+  // devtool: 'source-map'
+  devtool: '#eval-source-map'
 }
