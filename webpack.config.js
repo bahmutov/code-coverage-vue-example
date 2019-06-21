@@ -8,10 +8,10 @@ module.exports = {
 
   module: {
     rules: [
-      // ... other rules
+      // load .Vue files
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        use: ['vue-loader']
       },
       // this will apply to both plain `.scss` files
       // AND `<style lang="scss">` blocks in `.vue` files
