@@ -1,14 +1,15 @@
 {
   "name": "code-coverage-vue-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Code coverage for Vue single file components from Cypress.io end-to-end tests",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "dev": "start-test 8080 cy:open"
+    "dev": "start-test 8080 cy:open",
+    "report:coverage": "nyc report"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
