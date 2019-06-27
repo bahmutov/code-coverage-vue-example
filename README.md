@@ -3,7 +3,7 @@
 
 Uses [@cypress/code-coverage](https://github.com/cypress-io/code-coverage) plugin for [Cypress.io](https://www.cypress.io) test runner. See [https://on.cypress.io/code-coverage](https://on.cypress.io/code-coverage)
 
-Because this application is served using `webpack-dev-server, it instruments the application code following the example in [bahmutov/code-coverage-webpack-dev-server](https://github.com/bahmutov/code-coverage-webpack-dev-server).
+Because this application is served using `webpack-dev-server, it instruments the application code following the example in [bahmutov/code-coverage-webpack-dev-server](https://github.com/bahmutov/code-coverage-webpack-dev-server) via [.babelrc](.babelrc) and [webpack.config.js](webpack.config.js) files.
 
 ## License
 
