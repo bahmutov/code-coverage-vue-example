@@ -1,6 +1,11 @@
 <template>
   <div>
-    <BaseInputText v-model="newTodoText" placeholder="New todo" @keydown.enter="addTodo"/>
+    <BaseInputText
+      data-cy="input"
+      v-model="newTodoText"
+      placeholder="New todo"
+      @keydown.enter="addTodo"
+    />
     <ul v-if="todos.length">
       <TodoListItem v-for="todo in todos" :key="todo.id" :todo="todo" @remove="removeTodo"/>
     </ul>
@@ -23,6 +28,8 @@ export default {
     return {
       newTodoText: "",
       todos: [
+        // empty list at first
+        /*
         {
           id: nextTodoId++,
           text: "Learn Vue"
@@ -35,6 +42,7 @@ export default {
           id: nextTodoId++,
           text: "Fall in love"
         }
+        */
       ]
     };
   },
