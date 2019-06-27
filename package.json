@@ -9,7 +9,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "dev": "start-test 8080 cy:open",
-    "report:coverage": "nyc report"
+    "report:coverage": "nyc report",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
@@ -22,6 +23,7 @@
     "babel-plugin-istanbul": "5.1.4",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
+    "coveralls": "3.0.4",
     "css-loader": "3.0.0",
     "cypress": "3.3.1",
     "html-webpack-plugin": "3.2.0",

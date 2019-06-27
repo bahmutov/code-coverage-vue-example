@@ -1,4 +1,4 @@
-# code-coverage-vue-example [![renovate-app badge][renovate-badge]][renovate-app]
+# code-coverage-vue-example [![renovate-app badge][renovate-badge]][renovate-app] [![CircleCI](https://circleci.com/gh/bahmutov/code-coverage-vue-example/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/code-coverage-vue-example/tree/master)
 > Code coverage for Vue single file components from Cypress.io end-to-end tests
 
 Uses [@cypress/code-coverage](https://github.com/cypress-io/code-coverage) plugin for [Cypress.io](https://www.cypress.io) test runner. See [https://on.cypress.io/code-coverage](https://on.cypress.io/code-coverage)
