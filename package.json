@@ -13,6 +13,7 @@
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
+  "private": true,
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.4.5",
