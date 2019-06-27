@@ -17,4 +17,4 @@ workflows:
             - store_artifacts:
                 path: coverage
             # print code coverage summary to the terminal
-            - run: npx nyc report
+            - run: npm run report:coverage
