@@ -31,7 +31,7 @@
     "istanbul-lib-coverage": "2.0.5",
     "node-sass": "4.14.1",
     "nyc": "14.1.1",
-    "sass": "1.63.3",
+    "sass": "1.71.0",
     "sass-loader": "7.3.1",
     "script-ext-html-webpack-plugin": "2.1.5",
     "start-server-and-test": "1.15.4",
